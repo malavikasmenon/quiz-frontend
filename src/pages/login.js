@@ -5,7 +5,7 @@ import '../App.css';
 function Login(){
     return(
         <div className="login">
-            <h1>Quiz App - Login</h1>
+            <h1 className="nav-head">Quiz App - Login</h1>
             <div className="form-field">
                 <div className="input">
                     <input className="login-input" placeholder="Username"></input>

@@ -1,11 +1,22 @@
-import { Link, withRouter } from "react-router-dom"
+import { Link, withRouter } from "react-router-dom";
+import '../App.css';
 
 
 function Login(){
     return(
-        <div>
-            <h1>This is the login page.</h1>
-            <Link to="/users/userhome"><button>Login</button></Link>
+        <div className="login">
+            <h1>Quiz App - Login</h1>
+            <div className="form-field">
+                <div className="input">
+                    <input className="login-input" placeholder="Username"></input>
+                </div>
+                <div className="input">
+                    
+                    <input type="password" className="login-input" placeholder="Password"></input>
+                </div>
+                <Link to="/users/userhome"><input type="submit" className="login-button" value="Login &rarr;"></input></Link>
+            </div>
+            
         </div>
     )
 }

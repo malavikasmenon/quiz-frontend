@@ -10,6 +10,7 @@ import CreateTest from './users/CreateTest';
 import TestName from './users/testname';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import QuizQuestion from './quiz/QuizQuestion';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -21,6 +22,7 @@ ReactDOM.render(
         <Route path="/users/create" component = {CreateTest} />
         <Route path="/users/attempt" component = {AttemptTest} />
         <Route path="/users/testname" component={TestName} />
+        <Route path="/quiz/quizquestion" component={QuizQuestion} />
       </Switch>
   </BrowserRouter>,
   document.getElementById('root')
